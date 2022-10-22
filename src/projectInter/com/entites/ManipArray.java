@@ -53,14 +53,14 @@ public class ManipArray  // classe de manipulação de matriz
 			for (int c = 0; c < this.Pos.getColumn(); c++)
 			{
 				// se a coluna for igual a quantidade de colunas - 1
-				if (c == this.Pos.getColumn() - 1) {
-					// imprima e pula linha
-					System.out.println(this.Array[l][c]);
+				if (!(c == this.Pos.getColumn() - 1)) {
+					// imprima na mesma linha e com espaço
+					System.out.print(this.Array[l][c] + " ");
 				}
 				else // caso contrário
 				{
-					// imprima na mesma linha
-					System.out.print(this.Array[l][c] + " ");
+					// imprima e pula linha
+					System.out.println(this.Array[l][c]);
 				}
 			}
 		}
